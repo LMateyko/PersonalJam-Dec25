@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, InputSystem_Player.IPlayerActions
 {
     [Header("Player Settings")]
     [SerializeField] private float m_playerSpeed = 5f;
@@ -13,32 +13,53 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private SpriteRenderer m_renderer;
     [SerializeField] private Animator m_animator;
 
-    private bool m_isGrounded;
+    private InputSystem_Player m_playerInputSystem;
+    private InputSystem_Player.PlayerActions m_playerActions;
+
+    private bool m_isAttacking = false;
+    private bool m_isGrounded = false;
+    private float m_targetVelocityX = 0;
+
     private ContactFilter2D m_terrainFilter;
     private List<ContactPoint2D> m_contactCache = new List<ContactPoint2D>();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
+        m_playerInputSystem = new InputSystem_Player();
+        m_playerActions = m_playerInputSystem.Player;
+        m_playerActions.AddCallbacks(this);
+
         m_terrainFilter = new ContactFilter2D { layerMask = LayerMask.GetMask("Terrain") };
         m_rigidBody.linearVelocity = Vector2.zero;
     }
 
-    private void OnMove(InputValue value)
+
+    private void OnEnable()
     {
-        var moveValue = value.Get<Vector2>();
-        Debug.Log($"Move Value: {moveValue}");
-        if (moveValue.y > 0)
+        m_playerActions.Enable();
+    }
+
+    private void OnDisable()
+    {
+        m_playerActions.Disable();
+    }
+
+    private void OnDestroy()
+    {
+        m_playerInputSystem.Dispose();
+    }
+
+    #region InputSystem_Player.IPlayerActions Implementation
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        var moveValue = context.ReadValue<Vector2>();
+        if (moveValue.x != 0)
         {
-            StartJump();
-        }
-        else if (moveValue.x != 0)
-        {
-            m_rigidBody.linearVelocityX = moveValue.x * m_playerSpeed;
+            m_targetVelocityX = moveValue.x * m_playerSpeed;
         }
         else
         {
-            m_rigidBody.linearVelocityX = 0;
+            m_targetVelocityX = 0;
         }
 
         if (moveValue.x > 0)
@@ -47,17 +68,38 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
     }
 
-    private void OnJump(InputValue value)
+    public void OnAttack(InputAction.CallbackContext context)
     {
-        var jumpValue = value.Get<float>();
-        Debug.Log($"Jump Value: {jumpValue}");
-        if (jumpValue > 0)
+        if (m_isAttacking)
+            return;
+
+        if (context.performed)
+        {
+            m_isAttacking = true;
+
+            if (m_isGrounded)
+            {
+                m_rigidBody.linearVelocityX = 0;
+                m_animator.Play("Knight_Attack_1", 0, 0);
+            }
+            else
+            {
+                m_animator.Play("Knight_Attack_2");
+            }
+        }
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (context.performed)
             StartJump();
     }
 
+    #endregion
+
     private void StartJump()
     {
-        if (m_isGrounded)
+        if (m_isGrounded && !m_isAttacking)
             m_rigidBody.linearVelocityY = m_jumpForce;
     }
 
@@ -74,6 +116,11 @@ public class PlayerController : MonoBehaviour
 
         //if (m_isGrounded)
         //    m_rigidBody.linearVelocityY = 0;
+
+        if (m_isAttacking && m_isGrounded)
+            m_rigidBody.linearVelocityX = 0;
+        else
+            m_rigidBody.linearVelocityX = m_targetVelocityX;
     }
 
     private bool IsGrounded()
@@ -93,6 +140,18 @@ public class PlayerController : MonoBehaviour
 
     private void SetAnimationState()
     {
+        if(m_isAttacking)
+        {
+            if ((m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash == Animator.StringToHash("Knight_Attack_1")
+                || m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash == Animator.StringToHash("Knight_Attack_2"))
+                && m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                m_isAttacking = false;
+            }
+            else
+                return;
+        }
+
         int targetAnimation = 0;
         if (m_rigidBody.linearVelocity == Vector2.zero)
             targetAnimation = Animator.StringToHash("Knight_Idle");
@@ -111,5 +170,4 @@ public class PlayerController : MonoBehaviour
         }
             
     }
-
 }
