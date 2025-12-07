@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00dc234f786824f44a493ad5ed6e2200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_animationPrefix: Knight
   m_rigidBody: {fileID: 2378202509103441949}
   m_attackCollider: {fileID: 5237046289208817252}
   m_renderer: {fileID: 1928879425808367626}

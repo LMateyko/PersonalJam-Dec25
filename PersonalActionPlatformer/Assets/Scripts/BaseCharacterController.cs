@@ -1,14 +1,16 @@
 using System.Collections.Generic;
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class BaseCharacterController : MonoBehaviour
 {
+    [Header("Character Settings")]
+    [SerializeField] protected string m_animationPrefix; 
+
     [Header("Character Object References")]
     [SerializeField] protected Rigidbody2D m_rigidBody;
     [SerializeField] protected Collider2D m_attackCollider;
     [SerializeField] protected SpriteRenderer m_renderer;
-    [SerializeField] protected Animator m_animator;
+    [SerializeField] private Animator m_animator;
 
     protected bool m_isAttacking = false;
     protected bool m_isGrounded = false;
@@ -16,6 +18,23 @@ public class CharacterController : MonoBehaviour
 
     private ContactFilter2D m_terrainFilter;
     private List<ContactPoint2D> m_contactCache = new List<ContactPoint2D>();
+
+    protected bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
+
+    #region Animation Helpers
+    public void PlayCharacterAnimation(string animationName)
+    {
+        var fullAnimationName = $"{m_animationPrefix}_{animationName}";
+        if(!IsAnimationPlaying(animationName))
+            m_animator.Play(fullAnimationName);
+    }
+
+    public bool IsAnimationPlaying(string animationName)
+    {
+        var fullAnimationName = $"{m_animationPrefix}_{animationName}";
+        return m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash == Animator.StringToHash(fullAnimationName);
+    }
+    #endregion
 
     protected virtual void Awake()
     {
@@ -60,5 +79,21 @@ public class CharacterController : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Attack")
+        {
+            Debug.Log($"{collision.attachedRigidbody.gameObject.name} hit {gameObject.name}. ");
+            TakeDamage();
+        }
+
+    }
+
+    protected virtual void TakeDamage()
+    {
+        
+        Destroy(gameObject);
     }
 }

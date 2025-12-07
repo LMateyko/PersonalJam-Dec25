@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : CharacterController, InputSystem_Player.IPlayerActions
+public class PlayerController : BaseCharacterController, InputSystem_Player.IPlayerActions
 {
     [Header("Player Settings")]
     [SerializeField] private float m_playerSpeed = 5f;
@@ -66,11 +66,11 @@ public class PlayerController : CharacterController, InputSystem_Player.IPlayerA
             if (m_isGrounded)
             {
                 m_rigidBody.linearVelocityX = 0;
-                m_animator.Play("Knight_Attack_1", 0, 0);
+                PlayCharacterAnimation("Attack_1");
             }
             else
             {
-                m_animator.Play("Knight_Attack_2");
+                PlayCharacterAnimation("Attack_2");
             }
         }
     }
@@ -93,9 +93,8 @@ public class PlayerController : CharacterController, InputSystem_Player.IPlayerA
     {
         if(m_isAttacking)
         {
-            if ((m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash == Animator.StringToHash("Knight_Attack_1")
-                || m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash == Animator.StringToHash("Knight_Attack_2"))
-                && m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            if ((IsAnimationPlaying("Attack_1") || IsAnimationPlaying("Attack_2"))
+                && AnimationHasFinished)
             {
                 m_isAttacking = false;
             }
@@ -103,22 +102,15 @@ public class PlayerController : CharacterController, InputSystem_Player.IPlayerA
                 return;
         }
 
-        int targetAnimation = 0;
         if (m_rigidBody.linearVelocity == Vector2.zero)
-            targetAnimation = Animator.StringToHash("Knight_Idle");
+            PlayCharacterAnimation("Idle");
         else if (m_rigidBody.linearVelocityY > 0.01f)
-            targetAnimation = Animator.StringToHash("Knight_Jump");
+            PlayCharacterAnimation("Jump");
         else if (m_rigidBody.linearVelocityY < -0.01f)
-            targetAnimation = Animator.StringToHash("Knight_Fall");
+            PlayCharacterAnimation("Fall");
         else if (m_rigidBody.linearVelocityX > 0.01f || m_rigidBody.linearVelocityX < -0.01f)
-            targetAnimation = Animator.StringToHash("Knight_Run");
+            PlayCharacterAnimation("Run");
         else
-            targetAnimation = Animator.StringToHash("Knight_Idle");
-
-        if (targetAnimation != m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash)
-        {
-            m_animator.Play(targetAnimation);
-        }
-            
+            PlayCharacterAnimation("Idle");            
     }
 }
