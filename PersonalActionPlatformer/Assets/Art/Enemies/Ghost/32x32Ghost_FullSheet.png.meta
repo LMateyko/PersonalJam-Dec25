@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: fe7f1c61c8a41ba418ee359e5ddb1304
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2037525895981434895
+    second: 32x32Ghost_FullSheet_0
+  - first:
+      213: -8075691613532466713
+    second: 32x32Ghost_FullSheet_1
+  - first:
+      213: -6139528899631079510
+    second: 32x32Ghost_FullSheet_2
+  - first:
+      213: -4017197779134626526
+    second: 32x32Ghost_FullSheet_3
+  - first:
+      213: 7507088236060755931
+    second: 32x32Ghost_FullSheet_4
+  - first:
+      213: -6563163726639111614
+    second: 32x32Ghost_FullSheet_5
+  - first:
+      213: -5853902103034441970
+    second: 32x32Ghost_FullSheet_6
+  - first:
+      213: -822596105737215429
+    second: 32x32Ghost_FullSheet_7
+  - first:
+      213: 4753523470250198920
+    second: 32x32Ghost_FullSheet_8
+  - first:
+      213: -6143037209768899013
+    second: 32x32Ghost_FullSheet_9
+  - first:
+      213: 4257227829300036186
+    second: 32x32Ghost_FullSheet_10
+  - first:
+      213: -5464944268799042330
+    second: 32x32Ghost_FullSheet_11
+  - first:
+      213: 5270511722249382431
+    second: 32x32Ghost_FullSheet_12
+  - first:
+      213: 5252578232039198488
+    second: 32x32Ghost_FullSheet_13
+  - first:
+      213: -3628626988096894883
+    second: 32x32Ghost_FullSheet_14
+  - first:
+      213: 6539717107133314881
+    second: 32x32Ghost_FullSheet_15
+  - first:
+      213: -4836973204474663091
+    second: 32x32Ghost_FullSheet_16
+  - first:
+      213: -4806343761575816964
+    second: 32x32Ghost_FullSheet_17
+  - first:
+      213: -8576539839431471623
+    second: 32x32Ghost_FullSheet_18
+  - first:
+      213: -6741608042461858163
+    second: 32x32Ghost_FullSheet_19
+  - first:
+      213: -4184014832316013524
+    second: 32x32Ghost_FullSheet_20
+  - first:
+      213: 3043646967246786915
+    second: 32x32Ghost_FullSheet_21
+  - first:
+      213: 7439563490684206110
+    second: 32x32Ghost_FullSheet_22
+  - first:
+      213: -3769137084067304805
+    second: 32x32Ghost_FullSheet_23
+  - first:
+      213: 9033717836120989
+    second: 32x32Ghost_FullSheet_24
+  - first:
+      213: 3289184649661259803
+    second: 32x32Ghost_FullSheet_25
+  - first:
+      213: 3577332968949850579
+    second: 32x32Ghost_FullSheet_26
+  - first:
+      213: 4720834168515277763
+    second: 32x32Ghost_FullSheet_27
+  - first:
+      213: -5166326611769462706
+    second: 32x32Ghost_FullSheet_28
+  - first:
+      213: 1688064758654120300
+    second: 32x32Ghost_FullSheet_29
+  - first:
+      213: 2981948227983706614
+    second: 32x32Ghost_FullSheet_30
+  - first:
+      213: -5862645918400482719
+    second: 32x32Ghost_FullSheet_31
+  - first:
+      213: -897595243459881918
+    second: 32x32Ghost_FullSheet_32
+  - first:
+      213: -6941369199803196282
+    second: 32x32Ghost_FullSheet_33
+  - first:
+      213: -1131823522753815457
+    second: 32x32Ghost_FullSheet_34
+  - first:
+      213: 4214822199398052849
+    second: 32x32Ghost_FullSheet_35
+  - first:
+      213: 654588695632914166
+    second: 32x32Ghost_FullSheet_36
+  - first:
+      213: 151817748762863731
+    second: 32x32Ghost_FullSheet_37
+  - first:
+      213: -2115378333296146100
+    second: 32x32Ghost_FullSheet_38
+  - first:
+      213: -2009024992634270440
+    second: 32x32Ghost_FullSheet_39
+  - first:
+      213: -1581207471892757543
+    second: 32x32Ghost_FullSheet_40
+  - first:
+      213: -1912891263460098411
+    second: 32x32Ghost_FullSheet_41
+  - first:
+      213: 862564898289645578
+    second: 32x32Ghost_FullSheet_42
+  - first:
+      213: 8195443641317763507
+    second: 32x32Ghost_FullSheet_43
+  - first:
+      213: -6910968776934669229
+    second: 32x32Ghost_FullSheet_44
+  - first:
+      213: 5375581246243438897
+    second: 32x32Ghost_FullSheet_45
+  - first:
+      213: -6779157812555533639
+    second: 32x32Ghost_FullSheet_46
+  - first:
+      213: 3148607824816394594
+    second: 32x32Ghost_FullSheet_47
+  - first:
+      213: -5249874593028932818
+    second: 32x32Ghost_FullSheet_48
+  - first:
+      213: -5118808043530826011
+    second: 32x32Ghost_FullSheet_49
+  - first:
+      213: -7134414240227458522
+    second: 32x32Ghost_FullSheet_50
+  - first:
+      213: 890635525024719109
+    second: 32x32Ghost_FullSheet_51
+  - first:
+      213: -4663698759158390497
+    second: 32x32Ghost_FullSheet_52
+  - first:
+      213: -6272856022529410567
+    second: 32x32Ghost_FullSheet_53
+  - first:
+      213: -4147449760035992373
+    second: 32x32Ghost_FullSheet_54
+  - first:
+      213: -6093158965315665443
+    second: 32x32Ghost_FullSheet_55
+  - first:
+      213: 2951836832628798951
+    second: 32x32Ghost_FullSheet_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 196
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7fd5d2ef049b3e0800000000000000
+      internalID: -2037525895981434895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 191
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1dbcba3416def80800000000000000
+      internalID: -8075691613532466713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 191
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf9e319ef20ccaa0800000000000000
+      internalID: -6139528899631079510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 191
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225413667eb0048c0800000000000000
+      internalID: -4017197779134626526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_4
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 191
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd74ae7f9f88e2860800000000000000
+      internalID: 7507088236060755931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 195
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24262fe1d55fae4a0800000000000000
+      internalID: -6563163726639111614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 193
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f48b67d03c2cea0800000000000000
+      internalID: -5853902103034441970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 164
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32e9eb333d8594f0800000000000000
+      internalID: -822596105737215429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 159
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887ceb33968e7f140800000000000000
+      internalID: 4753523470250198920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 159
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ec7b5743c8fbaa0800000000000000
+      internalID: -6143037209768899013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 159
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52065da726b41b30800000000000000
+      internalID: 4257227829300036186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 159
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec1dec542e9824b0800000000000000
+      internalID: -5464944268799042330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 162
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ae43dac7e942940800000000000000
+      internalID: 5270511722249382431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_13
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 161
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f45ab9218e4e840800000000000000
+      internalID: 5252578232039198488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 132
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58c618caf684adc0800000000000000
+      internalID: -3628626988096894883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 132
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147f93e5f0eb1ca50800000000000000
+      internalID: 6539717107133314881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 132
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f64377f7e9fdcb0800000000000000
+      internalID: -4836973204474663091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 133
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0dbde50df6c4db0800000000000000
+      internalID: -4806343761575816964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_18
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 133
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd83bcd4720af880800000000000000
+      internalID: -8576539839431471623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 133
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86f426343ff072a0800000000000000
+      internalID: -6741608042461858163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 100
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24a6d88da46fe5c0800000000000000
+      internalID: -4184014832316013524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 68
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36190707ac43d3a20800000000000000
+      internalID: 3043646967246786915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 99
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c723a0493ae3760800000000000000
+      internalID: 7439563490684206110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9aaa62bac551bbc0800000000000000
+      internalID: -3769137084067304805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 70
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d938f965e18102000800000000000000
+      internalID: 9033717836120989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 98
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b102ab3130885ad20800000000000000
+      internalID: 3289184649661259803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 99
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1ac89b16d35a130800000000000000
+      internalID: 3577332968949850579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 72
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c331e90aa5c38140800000000000000
+      internalID: 4720834168515277763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_28
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4075d7a1558d48b0800000000000000
+      internalID: -5166326611769462706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_29
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 84
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c613f6944f53d6710800000000000000
+      internalID: 1688064758654120300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_30
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 74
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f903934d12026920800000000000000
+      internalID: 2981948227983706614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_31
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 76
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16278dd4992b3aea0800000000000000
+      internalID: -5862645918400482719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_32
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 49
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2445e79b1e91b83f0800000000000000
+      internalID: -897595243459881918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 49
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c94ee5d7d4baf90800000000000000
+      internalID: -6941369199803196282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 44
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cd3d1b084fa40f0800000000000000
+      internalID: -1131823522753815457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 53
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f33d82957e0e7a30800000000000000
+      internalID: 4214822199398052849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_36
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6af2553f0951900800000000000000
+      internalID: 654588695632914166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_37
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 44
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3782c99207d5b1200800000000000000
+      internalID: 151817748762863731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4943561d9aa4a2e0800000000000000
+      internalID: -2115378333296146100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_39
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 5
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d0729d9628e14e0800000000000000
+      internalID: -2009024992634270440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_40
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 36
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d383a19e2c6e0ae0800000000000000
+      internalID: -1581207471892757543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_41
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 36
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e3383e78b0475e0800000000000000
+      internalID: -1912891263460098411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_42
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 38
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a087646743278fb00800000000000000
+      internalID: 862564898289645578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_43
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 44
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9aa7902901cb170800000000000000
+      internalID: 8195443641317763507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 36
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3544ef4638e4710a0800000000000000
+      internalID: -6910968776934669229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_45
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 36
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131879399a6e99a40800000000000000
+      internalID: 5375581246243438897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 4
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2305213e79be1a0800000000000000
+      internalID: -6779157812555533639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_47
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 4
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2615237722a12bb20800000000000000
+      internalID: 3148607824816394594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_48
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 14
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b79276fd2b427b0800000000000000
+      internalID: -5249874593028932818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_49
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 14
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eeceeb743756f8b0800000000000000
+      internalID: -5118808043530826011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_50
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 4
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62201ca5c087dfc90800000000000000
+      internalID: -7134414240227458522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_51
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 17
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501217d8a4c2c5c00800000000000000
+      internalID: 890635525024719109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_52
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 4
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f112fe810b6374fb0800000000000000
+      internalID: -4663698759158390497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_53
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 17
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9f6f9bea652f8a0800000000000000
+      internalID: -6272856022529410567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_54
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc8649da6c4176c0800000000000000
+      internalID: -4147449760035992373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_55
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 9
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd18f583430c07ba0800000000000000
+      internalID: -6093158965315665443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32Ghost_FullSheet_56
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 9
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5f0c3b5f707f820800000000000000
+      internalID: 2951836832628798951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      32x32Ghost_FullSheet_0: -2037525895981434895
+      32x32Ghost_FullSheet_1: -8075691613532466713
+      32x32Ghost_FullSheet_10: 4257227829300036186
+      32x32Ghost_FullSheet_11: -5464944268799042330
+      32x32Ghost_FullSheet_12: 5270511722249382431
+      32x32Ghost_FullSheet_13: 5252578232039198488
+      32x32Ghost_FullSheet_14: -3628626988096894883
+      32x32Ghost_FullSheet_15: 6539717107133314881
+      32x32Ghost_FullSheet_16: -4836973204474663091
+      32x32Ghost_FullSheet_17: -4806343761575816964
+      32x32Ghost_FullSheet_18: -8576539839431471623
+      32x32Ghost_FullSheet_19: -6741608042461858163
+      32x32Ghost_FullSheet_2: -6139528899631079510
+      32x32Ghost_FullSheet_20: -4184014832316013524
+      32x32Ghost_FullSheet_21: 3043646967246786915
+      32x32Ghost_FullSheet_22: 7439563490684206110
+      32x32Ghost_FullSheet_23: -3769137084067304805
+      32x32Ghost_FullSheet_24: 9033717836120989
+      32x32Ghost_FullSheet_25: 3289184649661259803
+      32x32Ghost_FullSheet_26: 3577332968949850579
+      32x32Ghost_FullSheet_27: 4720834168515277763
+      32x32Ghost_FullSheet_28: -5166326611769462706
+      32x32Ghost_FullSheet_29: 1688064758654120300
+      32x32Ghost_FullSheet_3: -4017197779134626526
+      32x32Ghost_FullSheet_30: 2981948227983706614
+      32x32Ghost_FullSheet_31: -5862645918400482719
+      32x32Ghost_FullSheet_32: -897595243459881918
+      32x32Ghost_FullSheet_33: -6941369199803196282
+      32x32Ghost_FullSheet_34: -1131823522753815457
+      32x32Ghost_FullSheet_35: 4214822199398052849
+      32x32Ghost_FullSheet_36: 654588695632914166
+      32x32Ghost_FullSheet_37: 151817748762863731
+      32x32Ghost_FullSheet_38: -2115378333296146100
+      32x32Ghost_FullSheet_39: -2009024992634270440
+      32x32Ghost_FullSheet_4: 7507088236060755931
+      32x32Ghost_FullSheet_40: -1581207471892757543
+      32x32Ghost_FullSheet_41: -1912891263460098411
+      32x32Ghost_FullSheet_42: 862564898289645578
+      32x32Ghost_FullSheet_43: 8195443641317763507
+      32x32Ghost_FullSheet_44: -6910968776934669229
+      32x32Ghost_FullSheet_45: 5375581246243438897
+      32x32Ghost_FullSheet_46: -6779157812555533639
+      32x32Ghost_FullSheet_47: 3148607824816394594
+      32x32Ghost_FullSheet_48: -5249874593028932818
+      32x32Ghost_FullSheet_49: -5118808043530826011
+      32x32Ghost_FullSheet_5: -6563163726639111614
+      32x32Ghost_FullSheet_50: -7134414240227458522
+      32x32Ghost_FullSheet_51: 890635525024719109
+      32x32Ghost_FullSheet_52: -4663698759158390497
+      32x32Ghost_FullSheet_53: -6272856022529410567
+      32x32Ghost_FullSheet_54: -4147449760035992373
+      32x32Ghost_FullSheet_55: -6093158965315665443
+      32x32Ghost_FullSheet_56: 2951836832628798951
+      32x32Ghost_FullSheet_6: -5853902103034441970
+      32x32Ghost_FullSheet_7: -822596105737215429
+      32x32Ghost_FullSheet_8: 4753523470250198920
+      32x32Ghost_FullSheet_9: -6143037209768899013
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

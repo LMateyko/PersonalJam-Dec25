@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 778325bc412b6fa4392373b0d5d90ed1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3863566872766227998
+    second: 80x48Wolf_FullSheet_0
+  - first:
+      213: -4771164907263471310
+    second: 80x48Wolf_FullSheet_1
+  - first:
+      213: 3577345393113974065
+    second: 80x48Wolf_FullSheet_2
+  - first:
+      213: -5270806509003463107
+    second: 80x48Wolf_FullSheet_3
+  - first:
+      213: 4014323059146909465
+    second: 80x48Wolf_FullSheet_4
+  - first:
+      213: 1019158933650526832
+    second: 80x48Wolf_FullSheet_5
+  - first:
+      213: -1203921202665235989
+    second: 80x48Wolf_FullSheet_6
+  - first:
+      213: 5592969054446961736
+    second: 80x48Wolf_FullSheet_7
+  - first:
+      213: -3788391062855328773
+    second: 80x48Wolf_FullSheet_8
+  - first:
+      213: 1069741414767227291
+    second: 80x48Wolf_FullSheet_9
+  - first:
+      213: 7800595344215808352
+    second: 80x48Wolf_FullSheet_10
+  - first:
+      213: -246223290549509736
+    second: 80x48Wolf_FullSheet_11
+  - first:
+      213: -2538883273758441829
+    second: 80x48Wolf_FullSheet_12
+  - first:
+      213: -839559401272528613
+    second: 80x48Wolf_FullSheet_13
+  - first:
+      213: 7956238441275288326
+    second: 80x48Wolf_FullSheet_14
+  - first:
+      213: -5743581934596189939
+    second: 80x48Wolf_FullSheet_15
+  - first:
+      213: 8060659482135761087
+    second: 80x48Wolf_FullSheet_16
+  - first:
+      213: -189176830634228687
+    second: 80x48Wolf_FullSheet_17
+  - first:
+      213: 5648531411720412118
+    second: 80x48Wolf_FullSheet_18
+  - first:
+      213: -3582909076917558909
+    second: 80x48Wolf_FullSheet_19
+  - first:
+      213: -2041275516159395844
+    second: 80x48Wolf_FullSheet_20
+  - first:
+      213: 8908076211033442547
+    second: 80x48Wolf_FullSheet_21
+  - first:
+      213: 3030124250346455154
+    second: 80x48Wolf_FullSheet_22
+  - first:
+      213: 6942398357590638874
+    second: 80x48Wolf_FullSheet_23
+  - first:
+      213: 4608125237230368431
+    second: 80x48Wolf_FullSheet_24
+  - first:
+      213: -3892436814163192980
+    second: 80x48Wolf_FullSheet_25
+  - first:
+      213: -2787948321114809858
+    second: 80x48Wolf_FullSheet_26
+  - first:
+      213: 5945523764547966995
+    second: 80x48Wolf_FullSheet_27
+  - first:
+      213: 178766218339176070
+    second: 80x48Wolf_FullSheet_28
+  - first:
+      213: -5400409302592816060
+    second: 80x48Wolf_FullSheet_29
+  - first:
+      213: 122164413334827072
+    second: 80x48Wolf_FullSheet_30
+  - first:
+      213: 7807377393512545325
+    second: 80x48Wolf_FullSheet_31
+  - first:
+      213: -1280073861043997936
+    second: 80x48Wolf_FullSheet_32
+  - first:
+      213: 1814613449052032013
+    second: 80x48Wolf_FullSheet_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 239
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e95dc6366ad16ac0800000000000000
+      internalID: -3863566872766227998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 239
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23150c9abca69cdb0800000000000000
+      internalID: -4771164907263471310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 239
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13540737ea845a130800000000000000
+      internalID: 3577345393113974065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 239
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36280fe7655ad6b0800000000000000
+      internalID: -5270806509003463107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_4
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 239
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9176c12bd8db5b730800000000000000
+      internalID: 4014323059146909465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_5
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 239
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072d7e186a7c42e00800000000000000
+      internalID: 1019158933650526832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_6
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 239
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9d3997b00da4fe0800000000000000
+      internalID: -1203921202665235989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_7
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 239
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8444012e8b73e9d40800000000000000
+      internalID: 5592969054446961736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb5e3c666eec6bc0800000000000000
+      internalID: -3788391062855328773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 191
+        width: 43
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9179b4262c78de00800000000000000
+      internalID: 1069741414767227291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_10
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 191
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0699c80e228414c60800000000000000
+      internalID: 7800595344215808352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_11
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 191
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8916e57c83d359cf0800000000000000
+      internalID: -246223290549509736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_12
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 191
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e72753d1314ccd0800000000000000
+      internalID: -2538883273758441829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_13
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 191
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11bf473c294954f0800000000000000
+      internalID: -839559401272528613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b658855bc3a6e60800000000000000
+      internalID: 7956238441275288326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 143
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d011b0a49a2ba40b0800000000000000
+      internalID: -5743581934596189939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_16
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 143
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0161087173ddf60800000000000000
+      internalID: 8060659482135761087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 143
+        width: 45
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1340052cca8ef5df0800000000000000
+      internalID: -189176830634228687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 143
+        width: 45
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db1b3a446d936e40800000000000000
+      internalID: 5648531411720412118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_19
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 143
+        width: 45
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3816ec77d23f64ec0800000000000000
+      internalID: -3582909076917558909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 95
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7fd92bbbeeba3e0800000000000000
+      internalID: -2041275516159395844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 95
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f881ceed18df9b70800000000000000
+      internalID: 8908076211033442547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_22
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 47
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270823f83f92d0a20800000000000000
+      internalID: 3030124250346455154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 49
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a110279168a585060800000000000000
+      internalID: 6942398357590638874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6f0a50d7953ff30800000000000000
+      internalID: 4608125237230368431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 47
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63562d27594bf9c0800000000000000
+      internalID: -3892436814163192980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_26
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 47
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef91ecbe5c73f49d0800000000000000
+      internalID: -2787948321114809858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_27
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 47
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3185685fc5eb28250800000000000000
+      internalID: 5945523764547966995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_28
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e42fdadea1b7200800000000000000
+      internalID: 178766218339176070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c7d351a54ed05b0800000000000000
+      internalID: -5400409302592816060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_30
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040340df2e302b100800000000000000
+      internalID: 122164413334827072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_31
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 0
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2cfab7cf50695c60800000000000000
+      internalID: 7807377393512545325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013b5320b934c3ee0800000000000000
+      internalID: -1280073861043997936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 80x48Wolf_FullSheet_33
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c8463515dce2910800000000000000
+      internalID: 1814613449052032013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      80x48Wolf_FullSheet_0: -3863566872766227998
+      80x48Wolf_FullSheet_1: -4771164907263471310
+      80x48Wolf_FullSheet_10: 7800595344215808352
+      80x48Wolf_FullSheet_11: -246223290549509736
+      80x48Wolf_FullSheet_12: -2538883273758441829
+      80x48Wolf_FullSheet_13: -839559401272528613
+      80x48Wolf_FullSheet_14: 7956238441275288326
+      80x48Wolf_FullSheet_15: -5743581934596189939
+      80x48Wolf_FullSheet_16: 8060659482135761087
+      80x48Wolf_FullSheet_17: -189176830634228687
+      80x48Wolf_FullSheet_18: 5648531411720412118
+      80x48Wolf_FullSheet_19: -3582909076917558909
+      80x48Wolf_FullSheet_2: 3577345393113974065
+      80x48Wolf_FullSheet_20: -2041275516159395844
+      80x48Wolf_FullSheet_21: 8908076211033442547
+      80x48Wolf_FullSheet_22: 3030124250346455154
+      80x48Wolf_FullSheet_23: 6942398357590638874
+      80x48Wolf_FullSheet_24: 4608125237230368431
+      80x48Wolf_FullSheet_25: -3892436814163192980
+      80x48Wolf_FullSheet_26: -2787948321114809858
+      80x48Wolf_FullSheet_27: 5945523764547966995
+      80x48Wolf_FullSheet_28: 178766218339176070
+      80x48Wolf_FullSheet_29: -5400409302592816060
+      80x48Wolf_FullSheet_3: -5270806509003463107
+      80x48Wolf_FullSheet_30: 122164413334827072
+      80x48Wolf_FullSheet_31: 7807377393512545325
+      80x48Wolf_FullSheet_32: -1280073861043997936
+      80x48Wolf_FullSheet_33: 1814613449052032013
+      80x48Wolf_FullSheet_4: 4014323059146909465
+      80x48Wolf_FullSheet_5: 1019158933650526832
+      80x48Wolf_FullSheet_6: -1203921202665235989
+      80x48Wolf_FullSheet_7: 5592969054446961736
+      80x48Wolf_FullSheet_8: -3788391062855328773
+      80x48Wolf_FullSheet_9: 1069741414767227291
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
