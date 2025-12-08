@@ -130,6 +130,8 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     {
         base.TakeDamage();
 
+        m_isAttacking = false;
+
         if(IsHitStunned)
         {
             m_rigidBody.linearVelocityX = 3f;

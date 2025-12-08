@@ -16,6 +16,7 @@ public class BaseCharacterController : MonoBehaviour
     protected int m_currentHealth = 0;
     protected bool m_isAttacking = false;
     protected bool m_isGrounded = false;
+    protected bool m_isFacingWall = false;
     protected float m_targetVelocityX = 0;
 
     private const float m_hitStun = 0.25f;
@@ -61,7 +62,7 @@ public class BaseCharacterController : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        m_isGrounded = IsGrounded();
+        CheckCollisionContacts();
 
         if (IsDead)
         {
@@ -90,30 +91,32 @@ public class BaseCharacterController : MonoBehaviour
 
     private void UpdateVelocity()
     {
-        
-
-        //if (m_isGrounded)
-        //    m_rigidBody.linearVelocityY = 0;
-
         if (m_isAttacking && m_isGrounded)
             m_rigidBody.linearVelocityX = 0;
         else
             m_rigidBody.linearVelocityX = m_targetVelocityX;
     }
 
-    private bool IsGrounded()
+    private void CheckCollisionContacts()
     {
+        m_isGrounded = false;
+        m_isFacingWall = false;
+
         var totalContacts = m_rigidBody.GetContacts(m_terrainFilter, m_contactCache);
         if (totalContacts == 0)
-            return false;
+            return;
 
         foreach (var contact in m_contactCache)
         {
             if (contact.normal == Vector2.up)
-                return true;
-        }
+                m_isGrounded = true;
 
-        return false;
+            if ((contact.normal == Vector2.right && transform.localScale.x < 0)
+                || (contact.normal == Vector2.left && transform.localScale.x > 0))
+            {
+                m_isFacingWall = true;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
