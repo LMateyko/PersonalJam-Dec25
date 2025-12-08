@@ -1819,7 +1819,7 @@ BoxCollider2D:
   m_Offset: {x: -0.37, y: -1.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.455, y: 0.5}
+    pivot: {x: 0.455, y: 0}
     oldSize: {x: 7.5, y: 5}
     newSize: {x: 1.2, y: 0.8}
     adaptiveTilingThreshold: 0.5
@@ -2414,11 +2414,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2455911006525104345, guid: 97079b0da9c88144bb68b2b6c6e06503, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2455911006525104345, guid: 97079b0da9c88144bb68b2b6c6e06503, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.51
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2455911006525104345, guid: 97079b0da9c88144bb68b2b6c6e06503, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2450,6 +2450,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2455911006525104345, guid: 97079b0da9c88144bb68b2b6c6e06503, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237046289208817252, guid: 97079b0da9c88144bb68b2b6c6e06503, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7771838059447095622, guid: 97079b0da9c88144bb68b2b6c6e06503, type: 3}

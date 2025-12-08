@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_animationPrefix
       value: Rat

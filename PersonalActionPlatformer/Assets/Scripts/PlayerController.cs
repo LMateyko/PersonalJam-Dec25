@@ -89,6 +89,18 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
             m_rigidBody.linearVelocityY = m_jumpForce;
     }
 
+    protected override void Update()
+    {
+        base.Update();
+
+        // Disable Player Controls while stunned or Dead
+        if ((IsDead || IsHitStunned) && m_playerActions.enabled)
+            m_playerActions.Disable();
+        else if (!m_playerActions.enabled)
+            m_playerActions.Enable();
+
+    }
+
     protected override void SetAnimationState()
     {
         if(m_isAttacking)
@@ -112,5 +124,29 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
             PlayCharacterAnimation("Run");
         else
             PlayCharacterAnimation("Idle");            
+    }
+
+    protected override void TakeDamage()
+    {
+        base.TakeDamage();
+
+        if(IsHitStunned)
+        {
+            m_rigidBody.linearVelocityX = 3f;
+            m_rigidBody.linearVelocityY = 3f;
+        }
+        else
+        {
+            m_rigidBody.linearVelocityX = 0f;
+            m_rigidBody.linearVelocityY = 0f;
+        }
+    }
+
+    protected override void OnDeath()
+    {
+        base.OnDeath();
+
+        // TODO: Respawn player
+        Destroy(gameObject);
     }
 }
