@@ -9,6 +9,7 @@ public class BaseCharacterController : MonoBehaviour
 
     [Header("Character Object References")]
     [SerializeField] protected Rigidbody2D m_rigidBody;
+    [SerializeField] protected Collider2D m_bodyCollider; 
     [SerializeField] protected Collider2D m_attackCollider;
     [SerializeField] protected SpriteRenderer m_renderer;
     [SerializeField] private Animator m_animator;
@@ -17,12 +18,15 @@ public class BaseCharacterController : MonoBehaviour
     protected bool m_isAttacking = false;
     protected bool m_isGrounded = false;
     protected bool m_isFacingWall = false;
+    protected bool m_isFacingCliff = false;
     protected float m_targetVelocityX = 0;
 
     private const float m_hitStun = 0.25f;
+    private const float m_cliffEdgeOffset = 0.1f;
     private ContactFilter2D m_terrainFilter;
     private List<ContactPoint2D> m_contactCache = new List<ContactPoint2D>();
 
+    public bool IsFacingRight { get => transform.localScale.x > 0; }
     public bool IsDead { get => m_currentHealth <= 0; }
     public bool IsDying { get => IsDead && IsAnimationPlaying("Death"); }
     protected bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
@@ -101,21 +105,52 @@ public class BaseCharacterController : MonoBehaviour
     {
         m_isGrounded = false;
         m_isFacingWall = false;
+        m_isFacingCliff = false;
 
         var totalContacts = m_rigidBody.GetContacts(m_terrainFilter, m_contactCache);
         if (totalContacts == 0)
             return;
 
+        float trackedPosX = IsFacingRight? float.MinValue : float.MaxValue;
+        float trackedPosY = 0;
+
+        var adjustedNormal = Vector2.zero;
         foreach (var contact in m_contactCache)
         {
-            if (contact.normal == Vector2.up)
+            // Adjust the normal to resolve values nearly 0; 
+            adjustedNormal = contact.normal;
+            if (adjustedNormal.x > -0.01f && adjustedNormal.x < 0.01f)
+                adjustedNormal.x = 0;
+            if (adjustedNormal.y > -0.01f && adjustedNormal.y < 0.01f)
+                adjustedNormal.y = 0;
+
+            if (adjustedNormal == Vector2.up)
+            {
                 m_isGrounded = true;
 
-            if ((contact.normal == Vector2.right && transform.localScale.x < 0)
-                || (contact.normal == Vector2.left && transform.localScale.x > 0))
+                if ((!IsFacingRight && contact.point.x < trackedPosX)
+                    || (IsFacingRight && contact.point.x > trackedPosX))
+                {
+                    trackedPosX = contact.point.x;
+                    trackedPosY = contact.point.y;
+                }
+
+                Debug.DrawLine(contact.point, contact.point + (Vector2.up) * 2f, Color.green);
+            }     
+
+            if ((!IsFacingRight && adjustedNormal == Vector2.right)
+                || (IsFacingRight && adjustedNormal == Vector2.left))
             {
                 m_isFacingWall = true;
             }
+        }
+
+        if ((!IsFacingRight && trackedPosX > m_bodyCollider.bounds.min.x + m_cliffEdgeOffset)
+            || (IsFacingRight && trackedPosX < m_bodyCollider.bounds.max.x - m_cliffEdgeOffset))
+        {
+            var contactPos = new Vector2(trackedPosX, trackedPosY);
+            Debug.DrawLine(contactPos, contactPos + (Vector2.up) * 2f, Color.red);
+            m_isFacingCliff = true;
         }
     }
 

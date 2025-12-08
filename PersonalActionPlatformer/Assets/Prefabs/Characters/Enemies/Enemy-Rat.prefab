@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: m_animationPrefix
       value: Rat
       objectReference: {fileID: 0}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_enemyMovementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3083665490429328474, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_Size.x
+      value: 2.02
+      objectReference: {fileID: 0}
     - target: {fileID: 3445776442468782870, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Name
       value: Enemy-Rat

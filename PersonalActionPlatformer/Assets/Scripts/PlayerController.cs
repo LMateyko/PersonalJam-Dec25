@@ -134,7 +134,7 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
 
         if(IsHitStunned)
         {
-            m_rigidBody.linearVelocityX = 3f;
+            m_rigidBody.linearVelocityX = IsFacingRight? -3f : 3f;
             m_rigidBody.linearVelocityY = 3f;
         }
         else
