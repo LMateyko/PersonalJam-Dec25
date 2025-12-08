@@ -15,10 +15,6 @@ public class BaseCharacterController : MonoBehaviour
     [SerializeField] private Animator m_animator;
 
     protected int m_currentHealth = 0;
-    protected bool m_isAttacking = false;
-    protected bool m_isGrounded = false;
-    protected bool m_isFacingWall = false;
-    protected bool m_isFacingCliff = false;
     protected float m_targetVelocityX = 0;
 
     private const float m_hitStun = 0.25f;
@@ -26,12 +22,17 @@ public class BaseCharacterController : MonoBehaviour
     private ContactFilter2D m_terrainFilter;
     private List<ContactPoint2D> m_contactCache = new List<ContactPoint2D>();
 
+    public bool IsAttacking { get; protected set; } = false;
+    public bool IsGrounded { get; private set; } = false;
+    public bool IsFacingWall { get; private set; } = false;
+    public bool IsFacingCliff { get; private set; } = false;
+
     public bool IsFacingRight { get => transform.localScale.x > 0; }
     public bool IsDead { get => m_currentHealth <= 0; }
     public bool IsDying { get => IsDead && IsAnimationPlaying("Death"); }
     protected bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
     protected float TimeInAnimation { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime * m_animator.GetCurrentAnimatorStateInfo(0).length; }
-    protected bool IsHitStunned { get => IsAnimationPlaying("Hit") && (TimeInAnimation < m_hitStun || !m_isGrounded); }
+    protected bool IsHitStunned { get => IsAnimationPlaying("Hit") && (TimeInAnimation < m_hitStun || !IsGrounded); }
 
     #region Animation Helpers
     public void PlayCharacterAnimation(string animationName)
@@ -95,7 +96,7 @@ public class BaseCharacterController : MonoBehaviour
 
     private void UpdateVelocity()
     {
-        if (m_isAttacking && m_isGrounded)
+        if (IsAttacking && IsGrounded)
             m_rigidBody.linearVelocityX = 0;
         else
             m_rigidBody.linearVelocityX = m_targetVelocityX;
@@ -103,9 +104,9 @@ public class BaseCharacterController : MonoBehaviour
 
     private void CheckCollisionContacts()
     {
-        m_isGrounded = false;
-        m_isFacingWall = false;
-        m_isFacingCliff = false;
+        IsGrounded = false;
+        IsFacingWall = false;
+        IsFacingCliff = false;
 
         var totalContacts = m_rigidBody.GetContacts(m_terrainFilter, m_contactCache);
         if (totalContacts == 0)
@@ -126,7 +127,7 @@ public class BaseCharacterController : MonoBehaviour
 
             if (adjustedNormal == Vector2.up)
             {
-                m_isGrounded = true;
+                IsGrounded = true;
 
                 if ((!IsFacingRight && contact.point.x < trackedPosX)
                     || (IsFacingRight && contact.point.x > trackedPosX))
@@ -141,7 +142,7 @@ public class BaseCharacterController : MonoBehaviour
             if ((!IsFacingRight && adjustedNormal == Vector2.right)
                 || (IsFacingRight && adjustedNormal == Vector2.left))
             {
-                m_isFacingWall = true;
+                IsFacingWall = true;
             }
         }
 
@@ -150,7 +151,7 @@ public class BaseCharacterController : MonoBehaviour
         {
             var contactPos = new Vector2(trackedPosX, trackedPosY);
             Debug.DrawLine(contactPos, contactPos + (Vector2.up) * 2f, Color.red);
-            m_isFacingCliff = true;
+            IsFacingCliff = true;
         }
     }
 

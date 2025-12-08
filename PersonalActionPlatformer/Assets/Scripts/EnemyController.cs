@@ -53,7 +53,7 @@ public class EnemyController : BaseCharacterController
 
     private void UpdatePatrolBehavior()
     {
-        if(m_isFacingWall || m_isFacingCliff)
+        if(IsFacingWall || IsFacingCliff)
         {
             var localScale = transform.localScale;
             localScale.x *= -1;

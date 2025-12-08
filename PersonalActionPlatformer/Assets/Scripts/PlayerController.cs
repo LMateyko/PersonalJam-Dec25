@@ -56,14 +56,14 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
 
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if (m_isAttacking)
+        if (IsAttacking)
             return;
 
         if (context.performed)
         {
-            m_isAttacking = true;
+            IsAttacking = true;
 
-            if (m_isGrounded)
+            if (IsGrounded)
             {
                 m_rigidBody.linearVelocityX = 0;
                 PlayCharacterAnimation("Attack_1");
@@ -85,7 +85,7 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
 
     private void StartJump()
     {
-        if (m_isGrounded && !m_isAttacking)
+        if (IsGrounded && !IsAttacking)
             m_rigidBody.linearVelocityY = m_jumpForce;
     }
 
@@ -103,12 +103,12 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
 
     protected override void SetAnimationState()
     {
-        if(m_isAttacking)
+        if(IsAttacking)
         {
             if ((IsAnimationPlaying("Attack_1") || IsAnimationPlaying("Attack_2"))
                 && AnimationHasFinished)
             {
-                m_isAttacking = false;
+                IsAttacking = false;
             }
             else
                 return;
@@ -130,7 +130,7 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     {
         base.TakeDamage();
 
-        m_isAttacking = false;
+        IsAttacking = false;
 
         if(IsHitStunned)
         {
