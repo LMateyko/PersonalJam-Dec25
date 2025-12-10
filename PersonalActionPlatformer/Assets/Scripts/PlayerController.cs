@@ -11,6 +11,20 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     private InputSystem_Player m_playerInputSystem;
     private InputSystem_Player.PlayerActions m_playerActions;
 
+    public bool LaunchPlayer(Vector2 launchVelocity, bool includeFacing = false)
+    {
+        if (IsGrounded)
+            return false;
+
+        if (launchVelocity.y != 0)
+            m_rigidBody.linearVelocityY = launchVelocity.y;
+
+        if (launchVelocity.x != 0)
+            m_rigidBody.linearVelocityX = includeFacing ? launchVelocity.x * transform.localScale.x : launchVelocity.x;
+
+        return true;
+    }
+
     protected override void Awake()
     {
         base.Awake();
