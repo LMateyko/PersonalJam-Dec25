@@ -152,7 +152,7 @@ MonoBehaviour:
   m_springCooldown: 1.5
   m_launchVelocity: {x: 0, y: 5}
   m_activeColor: {r: 0, g: 1, b: 0, a: 1}
-  m_cooldownColor: {r: 1, g: 0, b: 0, a: 0.7490196}
+  m_cooldownColor: {r: 1, g: 0, b: 0, a: 1}
   m_renderers:
   - {fileID: 1446805402477675313}
   - {fileID: 2254371474287373139}
