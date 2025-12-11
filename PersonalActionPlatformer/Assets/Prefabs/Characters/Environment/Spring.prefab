@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_springCooldown: 1.5
-  m_launchVelocity: {x: 0, y: 5}
+  m_launchVelocity: {x: 0, y: 10}
   m_activeColor: {r: 0, g: 1, b: 0, a: 1}
   m_cooldownColor: {r: 1, g: 0, b: 0, a: 1}
   m_renderers:
