@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,12 +131,12 @@ TextureImporter:
       name: 80x48Wolf_JumpAttackMove_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 0
-        width: 38
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: 80x48Wolf_JumpAttackMove_1
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1
-        width: 44
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 80
+        y: 0
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: 80x48Wolf_JumpAttackMove_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 160
         y: 0
-        width: 45
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: 80x48Wolf_JumpAttackMove_3
       rect:
         serializedVersion: 2
-        x: 276
+        x: 240
         y: 0
-        width: 43
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: 80x48Wolf_JumpAttackMove_4
       rect:
         serializedVersion: 2
-        x: 361
+        x: 320
         y: 0
-        width: 40
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,12 +241,12 @@ TextureImporter:
       name: 80x48Wolf_JumpAttackMove_5
       rect:
         serializedVersion: 2
-        x: 444
+        x: 400
         y: 0
-        width: 36
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18615be84a7b9a74d91ac9a73262885a
     internalID: 0
     vertices: []
     indices: 

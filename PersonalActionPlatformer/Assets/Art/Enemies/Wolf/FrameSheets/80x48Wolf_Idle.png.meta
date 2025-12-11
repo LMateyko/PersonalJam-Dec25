@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,12 +137,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 37
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_1
       rect:
         serializedVersion: 2
-        x: 92
+        x: 80
         y: 0
-        width: 37
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_2
       rect:
         serializedVersion: 2
-        x: 170
+        x: 160
         y: 0
-        width: 39
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_3
       rect:
         serializedVersion: 2
-        x: 248
+        x: 240
         y: 0
-        width: 41
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_4
       rect:
         serializedVersion: 2
-        x: 329
+        x: 320
         y: 0
-        width: 40
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_5
       rect:
         serializedVersion: 2
-        x: 408
+        x: 400
         y: 0
-        width: 41
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_6
       rect:
         serializedVersion: 2
-        x: 489
+        x: 480
         y: 0
-        width: 40
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: 80x48Wolf_Idle_7
       rect:
         serializedVersion: 2
-        x: 573
+        x: 560
         y: 0
-        width: 36
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f09d4092fec89c44a98331a3331862b1
     internalID: 0
     vertices: []
     indices: 
