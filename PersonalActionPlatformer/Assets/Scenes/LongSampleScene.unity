@@ -3903,6 +3903,10 @@ PrefabInstance:
       propertyPath: m_telegraphRange
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8835591349426254295, guid: 7e58bc61c1662204a960a622c3feec93, type: 3}
+      propertyPath: m_attackLeapVelocity.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

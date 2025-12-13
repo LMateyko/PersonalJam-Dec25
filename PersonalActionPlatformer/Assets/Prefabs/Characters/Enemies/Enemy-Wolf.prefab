@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Offset.x
-      value: 1.17
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Offset.y
@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemyOwner: {fileID: 1658381226698635254}
   m_patrolRange: 3.5
-  m_patrolSpeed: 2.5
+  m_patrolSpeed: 3
   m_telegraphRange: 2
-  m_attackRange: 1.5
+  m_telegraphDuration: 0.5
+  m_attackLeapVelocity: {x: 4, y: 1}

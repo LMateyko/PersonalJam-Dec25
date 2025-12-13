@@ -65,6 +65,13 @@ public class BaseCharacterController : MonoBehaviour
         m_targetVelocityX = targetVelocityX;
     }
 
+    public void LeapForward(Vector2 leapVelocity)
+    {
+        leapVelocity.x *= transform.localScale.x;
+        m_targetVelocityX = leapVelocity.x;
+        m_rigidBody.linearVelocityY = leapVelocity.y;
+    }
+
     protected virtual void Awake()
     {
         m_currentHealth = m_baseHealth;

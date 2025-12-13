@@ -14,6 +14,8 @@ public class EnemyWolfBehaviorController : EnemyBaseBehaviorController
     [SerializeField] private float m_telegraphRange = 2f;
     [Tooltip("How long the wolf will growl before attacking.")]
     [SerializeField] private float m_telegraphDuration = 0.5f;
+    [Tooltip("Leap velocity while attacking")]
+    [SerializeField] private Vector2 m_attackLeapVelocity;
 
     private bool InPatrolRange { get => Mathf.Abs(m_startingPosition.x - transform.position.x) < m_patrolRange - 0.25f; }
 
@@ -34,14 +36,14 @@ public class EnemyWolfBehaviorController : EnemyBaseBehaviorController
             UpdatePatrolBehavior();
             return;
         }
-        
+
         // Wait for the attack to finish
-        if(m_enemyOwner.IsAnimationPlaying("Attack") && !m_enemyOwner.AnimationHasFinished)
+        if (m_enemyOwner.IsAnimationPlaying("Attack") && !m_enemyOwner.AnimationHasFinished)
             return;
 
         if(m_telegraphTimer >= m_telegraphDuration)
             UpdateAttackBehavior();
-        else if (DistanceToPlayer <= m_telegraphRange)
+        else if (DistanceToPlayer <= m_telegraphRange || m_enemyOwner.IsAnimationPlaying("Growl"))
             UpdateTelegraphBehavior();
         else
             UpdatePatrolBehavior();
@@ -63,7 +65,7 @@ public class EnemyWolfBehaviorController : EnemyBaseBehaviorController
     private void UpdateAttackBehavior()
     {
         m_telegraphTimer = 0f;
-        m_enemyOwner.SetTargetVelocityX(5 * transform.localScale.x);
+        m_enemyOwner.LeapForward(m_attackLeapVelocity);
         m_enemyOwner.PlayCharacterAnimation("Attack");
     }
 
