@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : BaseCharacterController, InputSystem_Player.IPlayerActions
 {
@@ -11,6 +12,7 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     private InputSystem_Player m_playerInputSystem;
     private InputSystem_Player.PlayerActions m_playerActions;
 
+    private Vector2 m_lastSafePosition;
     public bool LaunchPlayer(Vector2 launchVelocity, bool includeFacing = false)
     {
         if (IsGrounded)
@@ -32,6 +34,8 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
         m_playerInputSystem = new InputSystem_Player();
         m_playerActions = m_playerInputSystem.Player;
         m_playerActions.AddCallbacks(this);
+
+        m_lastSafePosition = transform.position;
     }
 
     private void OnEnable()
@@ -118,6 +122,9 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
         else if (!m_playerActions.enabled)
             m_playerActions.Enable();
 
+        if (IsGrounded && !IsFacingCliff)
+            m_lastSafePosition = transform.position;
+
         SetAnimationState();
     }
 
@@ -146,6 +153,15 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
             PlayCharacterAnimation("Idle");            
     }
 
+    public override void EnterPit()
+    {
+        transform.position = m_lastSafePosition;
+
+        m_currentHealth--;
+        if (IsDead)
+            PlayCharacterAnimation("Death");
+    }
+
     protected override void TakeDamage()
     {
         base.TakeDamage();
@@ -168,7 +184,7 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     {
         base.OnDeath();
 
-        // TODO: Respawn player
-        Destroy(gameObject);
+        // TODO: Start a fade then reload the scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
     }
 }

@@ -72,6 +72,11 @@ public class BaseCharacterController : MonoBehaviour
         m_rigidBody.linearVelocityY = leapVelocity.y;
     }
 
+    public virtual void EnterPit()
+    {
+        Destroy(gameObject);
+    }
+
     protected virtual void Awake()
     {
         m_currentHealth = m_baseHealth;
