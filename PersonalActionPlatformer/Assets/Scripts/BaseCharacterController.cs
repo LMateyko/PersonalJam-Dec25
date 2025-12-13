@@ -54,6 +54,11 @@ public class BaseCharacterController : MonoBehaviour
     }
     #endregion
 
+    public void SetTargetVelocityX(float targetVelocityX)
+    {
+        m_targetVelocityX = targetVelocityX;
+    }
+
     protected virtual void Awake()
     {
         m_currentHealth = m_baseHealth;
@@ -71,9 +76,7 @@ public class BaseCharacterController : MonoBehaviour
 
         if (IsDead)
         {
-            if (IsDying && AnimationHasFinished)
-                OnDeath();
-
+            WhileDying();
             return;
         }
 
@@ -92,7 +95,19 @@ public class BaseCharacterController : MonoBehaviour
         PlayCharacterAnimation("Idle");
     }
 
-    protected virtual void OnDeath() { }
+    protected virtual void WhileDying()
+    {
+        m_attackCollider.enabled = false;
+
+        if (IsDying && AnimationHasFinished)
+            OnDeath();
+    }
+
+    protected virtual void OnDeath() 
+    {
+        m_rigidBody.Sleep();
+        m_bodyCollider.enabled = false;
+    }
 
     private void UpdateVelocity()
     {

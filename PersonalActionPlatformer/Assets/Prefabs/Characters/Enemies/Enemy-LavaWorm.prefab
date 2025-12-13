@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &212109956180940396
+--- !u!1001 &1927906697985815021
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,93 +8,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Size.x
-      value: 1.25
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_baseHealth
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Size.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Enabled
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_movementSpeed
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1523404009975023001, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_animationPrefix
-      value: Wolf
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083665490429328474, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Size.x
-      value: 2
+      value: LavaWorm
       objectReference: {fileID: 0}
     - target: {fileID: 3083665490429328474, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Size.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3083665490429328474, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.53
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 3083665490429328474, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Offset.y
-      value: 0.75
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 3445776442468782870, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Name
-      value: Enemy-Wolf
-      objectReference: {fileID: 0}
-    - target: {fileID: 4258364475297246342, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Size.x
-      value: 1.85
+      value: Enemy-LavaWorm
       objectReference: {fileID: 0}
     - target: {fileID: 4258364475297246342, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Size.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4258364475297246342, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.53
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4258364475297246342, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Offset.y
-      value: 0.75
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 4258364475297246342, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -127,11 +71,11 @@ PrefabInstance:
     - target: {fileID: 5140521922509405371, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 3a06ddab3be8bf343ab77f31a68cb2d6, type: 2}
+      objectReference: {fileID: 9100000, guid: bb655f77d3d633b448219ea5c9ea6172, type: 2}
     - target: {fileID: 5628062055791686135, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -9099822570671837602, guid: 490a7863c064180498f80796cfbb9580, type: 3}
+      objectReference: {fileID: -7969749396320865106, guid: 16fea7f8401dee84e858c16e6596d741, type: 3}
     - target: {fileID: 8559938869563871524, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
