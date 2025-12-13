@@ -217,7 +217,7 @@ MonoBehaviour:
   m_attackCollider: {fileID: 1523404009975023001}
   m_renderer: {fileID: 5628062055791686135}
   m_animator: {fileID: 5140521922509405371}
-  m_movementSpeed: 3
+  m_persistCorpse: 0
   m_hurtBox: {fileID: 4258364475297246342}
   m_behaviorController: {fileID: 5790512166303617292}
 --- !u!114 &5790512166303617292

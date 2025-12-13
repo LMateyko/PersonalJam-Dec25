@@ -63,9 +63,9 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
         }
 
         if (moveValue.x > 0)
-            transform.localScale = new Vector3(1, 1, 1);
+            FaceRight();
         else if (moveValue.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+            FaceLeft();
     }
 
     public void OnAttack(InputAction.CallbackContext context)
@@ -108,14 +108,20 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
         base.Update();
 
         // Disable Player Controls while stunned or Dead
-        if ((IsDead || IsHitStunned) && m_playerActions.enabled)
-            m_playerActions.Disable();
+        if (IsDead || IsHitStunned)
+        {
+            if (m_playerActions.enabled)
+                m_playerActions.Disable();
+
+            return;
+        }
         else if (!m_playerActions.enabled)
             m_playerActions.Enable();
 
+        SetAnimationState();
     }
 
-    protected override void SetAnimationState()
+    protected void SetAnimationState()
     {
         if(IsAttacking)
         {
@@ -148,8 +154,8 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
 
         if(IsHitStunned)
         {
-            m_rigidBody.linearVelocityX = IsFacingRight? -3f : 3f;
-            m_rigidBody.linearVelocityY = 3f;
+            m_rigidBody.linearVelocityX = IsFacingRight? -4.5f : 4.5f;
+            m_rigidBody.linearVelocityY = 4.5f;
         }
         else
         {

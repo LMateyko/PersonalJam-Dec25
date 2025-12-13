@@ -17,8 +17,11 @@ public class BaseCharacterController : MonoBehaviour
     protected int m_currentHealth = 0;
     protected float m_targetVelocityX = 0;
 
-    private const float m_hitStun = 0.25f;
-    private const float m_cliffEdgeOffset = 0.1f;
+    private readonly Vector3 FaceRightScale = new Vector3(1, 1, 1);
+    private readonly Vector3 FaceLeftScale = new Vector3(-1, 1, 1);
+
+    private const float HitStun = 0.25f;
+    private const float CliffEdgeOffset = 0.1f;
     private ContactFilter2D m_terrainFilter;
     private List<ContactPoint2D> m_contactCache = new List<ContactPoint2D>();
 
@@ -30,9 +33,9 @@ public class BaseCharacterController : MonoBehaviour
     public bool IsFacingRight { get => transform.localScale.x > 0; }
     public bool IsDead { get => m_currentHealth <= 0; }
     public bool IsDying { get => IsDead && IsAnimationPlaying("Death"); }
-    protected bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
-    protected float TimeInAnimation { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime * m_animator.GetCurrentAnimatorStateInfo(0).length; }
-    protected bool IsHitStunned { get => IsAnimationPlaying("Hit") && (TimeInAnimation < m_hitStun || !IsGrounded); }
+    public bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
+    public float TimeInAnimation { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime * m_animator.GetCurrentAnimatorStateInfo(0).length; }
+    protected bool IsHitStunned { get => IsAnimationPlaying("Hit") && (TimeInAnimation < HitStun || !IsGrounded); }
 
     #region Animation Helpers
     public void PlayCharacterAnimation(string animationName)
@@ -54,6 +57,9 @@ public class BaseCharacterController : MonoBehaviour
     }
     #endregion
 
+    public void FaceRight() { transform.localScale = FaceRightScale; }
+    public void FaceLeft() { transform.localScale = FaceLeftScale; }
+
     public void SetTargetVelocityX(float targetVelocityX)
     {
         m_targetVelocityX = targetVelocityX;
@@ -67,6 +73,13 @@ public class BaseCharacterController : MonoBehaviour
         m_rigidBody.linearVelocity = Vector2.zero;
 
         Physics2D.IgnoreCollision(m_rigidBody.GetComponent<Collider2D>(), m_attackCollider, true);
+        m_attackCollider.enabled = false;
+    }
+
+    protected virtual void Start()
+    {
+        // Default to the Idle Animation;
+        PlayCharacterAnimation("Idle");
     }
 
     // Update is called once per frame
@@ -86,13 +99,6 @@ public class BaseCharacterController : MonoBehaviour
         }
 
         UpdateVelocity();
-        SetAnimationState();
-    }
-
-    protected virtual void SetAnimationState() 
-    {
-        // Default to the Idle Animation;
-        PlayCharacterAnimation("Idle");
     }
 
     protected virtual void WhileDying()
@@ -135,9 +141,9 @@ public class BaseCharacterController : MonoBehaviour
         {
             // Adjust the normal to resolve values nearly 0; 
             adjustedNormal = contact.normal;
-            if (adjustedNormal.x > -0.01f && adjustedNormal.x < 0.01f)
+            if (adjustedNormal.x > -CliffEdgeOffset && adjustedNormal.x < CliffEdgeOffset)
                 adjustedNormal.x = 0;
-            if (adjustedNormal.y > -0.01f && adjustedNormal.y < 0.01f)
+            if (adjustedNormal.y > -CliffEdgeOffset && adjustedNormal.y < CliffEdgeOffset)
                 adjustedNormal.y = 0;
 
             if (adjustedNormal == Vector2.up)
@@ -161,8 +167,8 @@ public class BaseCharacterController : MonoBehaviour
             }
         }
 
-        if ((!IsFacingRight && trackedPosX > m_bodyCollider.bounds.min.x + m_cliffEdgeOffset)
-            || (IsFacingRight && trackedPosX < m_bodyCollider.bounds.max.x - m_cliffEdgeOffset))
+        if ((!IsFacingRight && trackedPosX > m_bodyCollider.bounds.min.x + CliffEdgeOffset)
+            || (IsFacingRight && trackedPosX < m_bodyCollider.bounds.max.x - CliffEdgeOffset))
         {
             var contactPos = new Vector2(trackedPosX, trackedPosY);
             Debug.DrawLine(contactPos, contactPos + (Vector2.up) * 2f, Color.red);

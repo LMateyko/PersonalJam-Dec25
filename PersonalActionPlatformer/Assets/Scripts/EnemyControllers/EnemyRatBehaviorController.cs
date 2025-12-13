@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class EnemyRatController : EnemyBaseBehaviorController
 {
-    //[Header("Rat Settings")]
+    [Header("Rat Settings")]
+    [SerializeField] protected float m_movementSpeed = 3f;
+
     //[Tooltip("How long the rat pauses when they are set to turn around.")]
     //[SerializeField] private bool m_pauseOnTurn = false;
 
@@ -15,6 +17,7 @@ public class EnemyRatController : EnemyBaseBehaviorController
             transform.localScale = localScale;
         }
 
-        m_enemyOwner.SetTargetVelocityX(m_enemyOwner.MovementSpeed * transform.localScale.x);
+        m_enemyOwner.SetTargetVelocityX(m_movementSpeed * transform.localScale.x);
+        m_enemyOwner.PlayCharacterAnimation("Run");
     }
 }
