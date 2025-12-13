@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,6 +9,8 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     [Header("Player Settings")]
     [SerializeField] private float m_playerSpeed = 5f;
     [SerializeField] private float m_jumpForce = 5f;
+
+    public Action<int> OnPlayerHurt;
 
     private InputSystem_Player m_playerInputSystem;
     private InputSystem_Player.PlayerActions m_playerActions;
@@ -160,12 +163,15 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
         m_currentHealth--;
         if (IsDead)
             PlayCharacterAnimation("Death");
+
+        OnPlayerHurt?.Invoke(m_currentHealth);
     }
 
     protected override void TakeDamage()
     {
         base.TakeDamage();
 
+        OnPlayerHurt?.Invoke(m_currentHealth);
         IsAttacking = false;
 
         if(IsHitStunned)

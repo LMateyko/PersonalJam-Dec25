@@ -29,8 +29,10 @@ public class BaseCharacterController : MonoBehaviour
     public bool IsGrounded { get; private set; } = false;
     public bool IsFacingWall { get; private set; } = false;
     public bool IsFacingCliff { get; private set; } = false;
-
     public bool IsFacingRight { get => transform.localScale.x > 0; }
+
+    public int MaxHealth { get => m_baseHealth; }
+    public int CurrentHealth { get => m_currentHealth; }
     public bool IsDead { get => m_currentHealth <= 0; }
     public bool IsDying { get => IsDead && IsAnimationPlaying("Death"); }
     public bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
