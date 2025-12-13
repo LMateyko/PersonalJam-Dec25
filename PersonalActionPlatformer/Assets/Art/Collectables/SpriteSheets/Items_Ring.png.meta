@@ -127,7 +127,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -147,9 +147,9 @@ TextureImporter:
       name: Items_Ring_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -169,9 +169,9 @@ TextureImporter:
       name: Items_Ring_2
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 6
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -191,9 +191,9 @@ TextureImporter:
       name: Items_Ring_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 093368df0740c7b4e863eb5370d753c4
     internalID: 0
     vertices: []
     indices: 

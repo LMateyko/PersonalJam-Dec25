@@ -139,7 +139,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,9 +159,9 @@ TextureImporter:
       name: Items_Scroll_1
       rect:
         serializedVersion: 2
-        x: 18
+        x: 16
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,9 +181,9 @@ TextureImporter:
       name: Items_Scroll_2
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 8
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: Items_Scroll_3
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,7 +227,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: Items_Scroll_5
       rect:
         serializedVersion: 2
-        x: 81
+        x: 80
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,9 +269,9 @@ TextureImporter:
       name: Items_Scroll_6
       rect:
         serializedVersion: 2
-        x: 100
+        x: 96
         y: 0
-        width: 8
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,9 +291,9 @@ TextureImporter:
       name: Items_Scroll_7
       rect:
         serializedVersion: 2
-        x: 113
+        x: 112
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c35a0db54cf1fcf45ad6071c43d87267
     internalID: 0
     vertices: []
     indices: 

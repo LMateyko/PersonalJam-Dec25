@@ -159,9 +159,9 @@ TextureImporter:
       name: Items_Bone_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,9 +181,9 @@ TextureImporter:
       name: Items_Bone_2
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 10
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       name: Items_Bone_3
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,7 +227,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 17
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +247,9 @@ TextureImporter:
       name: Items_Bone_5
       rect:
         serializedVersion: 2
-        x: 82
+        x: 80
         y: 0
-        width: 12
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,9 +269,9 @@ TextureImporter:
       name: Items_Bone_6
       rect:
         serializedVersion: 2
-        x: 99
+        x: 96
         y: 0
-        width: 9
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -291,9 +291,9 @@ TextureImporter:
       name: Items_Bone_7
       rect:
         serializedVersion: 2
-        x: 114
+        x: 112
         y: 0
-        width: 12
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 21ca24b84aa226044a4a5355943b83df
     internalID: 0
     vertices: []
     indices: 

@@ -156,9 +156,9 @@ TextureImporter:
       name: Items_Star_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,9 +178,9 @@ TextureImporter:
       name: Items_Star_2
       rect:
         serializedVersion: 2
-        x: 35
+        x: 32
         y: 0
-        width: 8
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,9 +200,9 @@ TextureImporter:
       name: Items_Star_3
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 0
-        width: 30
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -222,9 +222,9 @@ TextureImporter:
       name: Items_Star_4
       rect:
         serializedVersion: 2
-        x: 81
+        x: 64
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,9 +244,9 @@ TextureImporter:
       name: Items_Star_5
       rect:
         serializedVersion: 2
-        x: 100
+        x: 80
         y: 0
-        width: 7
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -266,9 +266,9 @@ TextureImporter:
       name: Items_Star_6
       rect:
         serializedVersion: 2
-        x: 114
+        x: 96
         y: 0
-        width: 13
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,11 +284,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Items_Star_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c8068eb76d6eb429347f5638abfef9
+      internalID: 535285079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c88c02909f5954d4a97002ca502259bf
     internalID: 0
     vertices: []
     indices: 
@@ -305,6 +327,7 @@ TextureImporter:
       Items_Star_4: -6426741825571167630
       Items_Star_5: 1870652750090129769
       Items_Star_6: 8708374712883035825
+      Items_Star_7: 535285079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
