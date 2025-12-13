@@ -4,6 +4,7 @@ public class EnemyController : BaseCharacterController
 {
     [Header("Enemy Settings")]
     [SerializeField] protected float m_movementSpeed = 3f;
+    [SerializeField] protected bool m_persistCorpse = false;
 
     [Header("Enemy Object References")]
     [SerializeField] protected Collider2D m_hurtBox = default;
@@ -42,6 +43,7 @@ public class EnemyController : BaseCharacterController
     {
         base.OnDeath();
 
-        Destroy(gameObject);
+        if(!m_persistCorpse)
+            Destroy(gameObject);
     }
 }

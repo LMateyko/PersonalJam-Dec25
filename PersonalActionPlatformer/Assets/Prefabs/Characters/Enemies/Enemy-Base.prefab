@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fab1fa5a045d84e9b2a67d3b85dc94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemyController: {fileID: 1581414457147482522}
+  m_enemyOwner: {fileID: 1581414457147482522}
 --- !u!95 &5140521922509405371 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6579077565028372094, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}

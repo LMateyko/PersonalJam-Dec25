@@ -8,13 +8,13 @@ public class EnemyRatController : EnemyBaseBehaviorController
 
     public override void UpdateBehavior() 
     {
-        if (m_enemyController.IsFacingWall || m_enemyController.IsFacingCliff)
+        if (m_enemyOwner.IsFacingWall || m_enemyOwner.IsFacingCliff)
         {
             var localScale = transform.localScale;
             localScale.x *= -1;
             transform.localScale = localScale;
         }
 
-        m_enemyController.SetTargetVelocityX(m_enemyController.MovementSpeed * transform.localScale.x);
+        m_enemyOwner.SetTargetVelocityX(m_enemyOwner.MovementSpeed * transform.localScale.x);
     }
 }
