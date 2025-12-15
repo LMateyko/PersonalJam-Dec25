@@ -10,6 +10,11 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     [SerializeField] private float m_playerSpeed = 5f;
     [SerializeField] private float m_jumpForce = 5f;
 
+    [Header("Player Audio Settings")]
+    [SerializeField] private AudioClip m_runLoop;
+    [SerializeField] private AudioClip m_jumpSFX;
+    [SerializeField] private AudioClip[] m_attackSFX;
+
     public Action<int> OnPlayerHurt;
 
     private InputSystem_Player m_playerInputSystem;
@@ -83,6 +88,8 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
         if (context.performed)
         {
             IsAttacking = true;
+            PlaySFX(m_attackSFX[UnityEngine.Random.Range(0,m_attackSFX.Length)], 
+                    pitch:UnityEngine.Random.Range(0.5f,1.5f));
 
             if (IsGrounded)
             {
@@ -107,7 +114,10 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
     private void StartJump()
     {
         if (IsGrounded && !IsAttacking)
+        {
+            PlaySFX(m_jumpSFX);
             m_rigidBody.linearVelocityY = m_jumpForce;
+        }
     }
 
     protected override void Update()
@@ -162,7 +172,7 @@ public class PlayerController : BaseCharacterController, InputSystem_Player.IPla
 
         m_currentHealth--;
         if (IsDead)
-            PlayCharacterAnimation("Death");
+            Die();
 
         OnPlayerHurt?.Invoke(m_currentHealth);
     }

@@ -57,6 +57,14 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_hitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 95a8306602666cd44aecf59b4b9c601c, type: 3}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_deathSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 95a8306602666cd44aecf59b4b9c601c, type: 3}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_animationPrefix
       value: Wolf
       objectReference: {fileID: 0}
@@ -219,3 +227,5 @@ MonoBehaviour:
   m_telegraphRange: 2
   m_telegraphDuration: 0.5
   m_attackLeapVelocity: {x: 4, y: 1}
+  m_wolfGrowlSFX: {fileID: 8300000, guid: 03bb2345731e84340912367cc99ccbf3, type: 3}
+  m_wolfAttackSFX: {fileID: 8300000, guid: b548d63972be83c40b3e5f0fccc103d8, type: 3}

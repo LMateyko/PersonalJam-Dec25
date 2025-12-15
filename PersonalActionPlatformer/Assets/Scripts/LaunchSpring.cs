@@ -7,6 +7,7 @@ public class LaunchSpring : MonoBehaviour
     [SerializeField] private Vector2 m_launchVelocity = default;
     [SerializeField] private Color m_activeColor = Color.green;
     [SerializeField] private Color m_cooldownColor = Color.red;
+    [SerializeField] private AudioClip m_springSFX;
 
     [Header("Spring Object References")]
     [SerializeField] private SpriteRenderer[] m_renderers;
@@ -48,6 +49,7 @@ public class LaunchSpring : MonoBehaviour
             var foundPlayer = collision.attachedRigidbody.GetComponent<PlayerController>();
             if (foundPlayer != null)
             {
+                foundPlayer.PlaySFX(m_springSFX);
                 var successfulLaunch = foundPlayer.LaunchPlayer(m_launchVelocity);
 
                 if(successfulLaunch)

@@ -17,6 +17,9 @@ public class EnemyWolfBehaviorController : EnemyBaseBehaviorController
     [Tooltip("Leap velocity while attacking")]
     [SerializeField] private Vector2 m_attackLeapVelocity;
 
+    [SerializeField] private AudioClip m_wolfGrowlSFX;
+    [SerializeField] private AudioClip m_wolfAttackSFX;
+
     private bool InPatrolRange { get => Mathf.Abs(m_startingPosition.x - transform.position.x) < m_patrolRange - 0.25f; }
 
     private Vector3 m_startingPosition;
@@ -51,6 +54,9 @@ public class EnemyWolfBehaviorController : EnemyBaseBehaviorController
 
     private void UpdateTelegraphBehavior()
     {
+        if (!m_enemyOwner.IsAnimationPlaying("Growl"))
+            m_enemyOwner.PlaySFX(m_wolfGrowlSFX);
+
         if (m_foundPlayer.transform.position.x > m_enemyOwner.transform.position.x)
             m_enemyOwner.FaceRight();
         else
@@ -65,6 +71,7 @@ public class EnemyWolfBehaviorController : EnemyBaseBehaviorController
     private void UpdateAttackBehavior()
     {
         m_telegraphTimer = 0f;
+        m_enemyOwner.PlaySFX(m_wolfAttackSFX);
         m_enemyOwner.LeapForward(m_attackLeapVelocity);
         m_enemyOwner.PlayCharacterAnimation("Attack");
     }

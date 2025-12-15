@@ -13,6 +13,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_hitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: ed7287a5c8e7632489f623638bcf9963, type: 3}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_baseHealth
       value: 2
       objectReference: {fileID: 0}

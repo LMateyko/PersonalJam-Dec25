@@ -153,6 +153,7 @@ MonoBehaviour:
   m_launchVelocity: {x: 0, y: 10}
   m_activeColor: {r: 0, g: 1, b: 0, a: 1}
   m_cooldownColor: {r: 1, g: 0, b: 0, a: 1}
+  m_springSFX: {fileID: 8300000, guid: b7f972cf9f59cf64e9a72c7cd3933aa6, type: 3}
   m_renderers:
   - {fileID: 1446805402477675313}
   - {fileID: 2254371474287373139}

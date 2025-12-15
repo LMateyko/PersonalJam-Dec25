@@ -109,6 +109,11 @@ CapsuleCollider2D:
   m_CorrespondingSourceObject: {fileID: 29490660278744412, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}
   m_PrefabInstance: {fileID: 5243733969262510904}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &7669364448783208798 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2497934382953730662, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}
+  m_PrefabInstance: {fileID: 5243733969262510904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8867585923480396523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3731938354083078611, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}
@@ -133,8 +138,15 @@ MonoBehaviour:
   m_attackCollider: {fileID: 5237046289208817252}
   m_renderer: {fileID: 1928879425808367626}
   m_animator: {fileID: 1407630464906726726}
+  m_sfxAudioSource: {fileID: 7669364448783208798}
+  m_hitSFX: {fileID: 8300000, guid: 87779748096c487479155b518c4189b6, type: 3}
+  m_deathSFX: {fileID: 8300000, guid: 748af32b249f3004187f6153da467056, type: 3}
   m_playerSpeed: 5
   m_jumpForce: 8.5
+  m_jumpSFX: {fileID: 8300000, guid: c3e02f99cedb5b34fb6185534546e96f, type: 3}
+  m_attackSFX:
+  - {fileID: 8300000, guid: 50dc910b00997f5479c22f9a8c4be295, type: 3}
+  - {fileID: 8300000, guid: 1c22fd25998e44447afb5daa32ecaa7f, type: 3}
 --- !u!61 &9085243054870547879 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3949718647738355359, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}

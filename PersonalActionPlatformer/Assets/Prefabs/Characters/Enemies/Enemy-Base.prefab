@@ -225,9 +225,15 @@ MonoBehaviour:
   m_attackCollider: {fileID: 1523404009975023001}
   m_renderer: {fileID: 5628062055791686135}
   m_animator: {fileID: 5140521922509405371}
+  m_sfxAudioSource: {fileID: 4517439548559777955}
+  m_hitSFX: {fileID: 0}
+  m_deathSFX: {fileID: 0}
   m_persistCorpse: 0
   m_hurtBox: {fileID: 4258364475297246342}
   m_behaviorController: {fileID: 5790512166303617292}
+  m_onEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5790512166303617292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +247,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyOwner: {fileID: 1581414457147482522}
+--- !u!82 &4517439548559777955 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2497934382953730662, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}
+  m_PrefabInstance: {fileID: 2025310605791326917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &5140521922509405371 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6579077565028372094, guid: db22aa825eea1cb49b433e1d14f5d13e, type: 3}

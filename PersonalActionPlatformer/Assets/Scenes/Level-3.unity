@@ -5803,6 +5803,10 @@ PrefabInstance:
       propertyPath: NextStage
       value: Level-4
       objectReference: {fileID: 0}
+    - target: {fileID: 950111787945510384, guid: 7e5256098a45847488882e6c20c543be, type: 3}
+      propertyPath: m_nextStage
+      value: Level-4
+      objectReference: {fileID: 0}
     - target: {fileID: 1313418373174807952, guid: 7e5256098a45847488882e6c20c543be, type: 3}
       propertyPath: m_Name
       value: Collectable_ClearStage

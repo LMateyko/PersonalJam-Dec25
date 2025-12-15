@@ -13,6 +13,11 @@ public class BaseCharacterController : MonoBehaviour
     [SerializeField] protected Collider2D m_attackCollider;
     [SerializeField] protected SpriteRenderer m_renderer;
     [SerializeField] private Animator m_animator;
+    [SerializeField] private AudioSource m_sfxAudioSource;
+
+    [Header("Character Audio Settings")]
+    [SerializeField] private AudioClip m_hitSFX;
+    [SerializeField] private AudioClip m_deathSFX;
 
     protected int m_currentHealth = 0;
     protected float m_targetVelocityX = 0;
@@ -58,6 +63,15 @@ public class BaseCharacterController : MonoBehaviour
         return m_animator.GetCurrentAnimatorStateInfo(0).shortNameHash == Animator.StringToHash(fullAnimationName);
     }
     #endregion
+
+    public void PlaySFX(AudioClip newSFX, float audioScale = 1f, float pitch = 1f)
+    {
+        if (newSFX == null)
+            return;
+
+        m_sfxAudioSource.pitch = pitch;
+        m_sfxAudioSource.PlayOneShot(newSFX, audioScale);
+    }
 
     public void FaceRight() { transform.localScale = FaceRightScale; }
     public void FaceLeft() { transform.localScale = FaceLeftScale; }
@@ -211,8 +225,30 @@ public class BaseCharacterController : MonoBehaviour
     {
         m_currentHealth--;
         if (IsDead)
-            PlayCharacterAnimation("Death");
+        {
+            Die();
+        }
         else
-            PlayCharacterAnimation("Hit");
+        {
+            GetHit();
+        }
+            
+    }
+
+    protected virtual void GetHit()
+    {
+        PlaySFX(m_hitSFX);
+        PlayCharacterAnimation("Hit");
+    }
+
+    protected virtual void Die()
+    {
+        float deathPitch = 1f;
+
+        if (m_deathSFX != null && m_hitSFX != null && m_deathSFX.name == m_hitSFX.name)
+            deathPitch = 0.5f;
+
+        PlaySFX(m_deathSFX, pitch: deathPitch);
+        PlayCharacterAnimation("Death");
     }
 }

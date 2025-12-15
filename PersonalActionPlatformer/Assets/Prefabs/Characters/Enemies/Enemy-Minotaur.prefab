@@ -13,6 +13,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_hitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 0480015afd524b343a691a76eb36b8ee, type: 3}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_deathSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 0480015afd524b343a691a76eb36b8ee, type: 3}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_baseHealth
       value: 5
       objectReference: {fileID: 0}
