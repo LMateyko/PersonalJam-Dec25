@@ -37,7 +37,7 @@ public class BaseCharacterController : MonoBehaviour
     public bool IsDying { get => IsDead && IsAnimationPlaying("Death"); }
     public bool AnimationHasFinished { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f; }
     public float TimeInAnimation { get => m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime * m_animator.GetCurrentAnimatorStateInfo(0).length; }
-    protected bool IsHitStunned { get => IsAnimationPlaying("Hit") && (TimeInAnimation < HitStun || !IsGrounded); }
+    public bool IsHitStunned { get => IsAnimationPlaying("Hit") && (TimeInAnimation < HitStun || !IsGrounded); }
 
     #region Animation Helpers
     public void PlayCharacterAnimation(string animationName)
@@ -194,6 +194,10 @@ public class BaseCharacterController : MonoBehaviour
     {
         if (collision.tag == "Attack")
         {
+            // Parent objects are either both players or both enemies
+            if (collision.attachedRigidbody.CompareTag(gameObject.tag))
+                return;
+
             if (IsDead || IsHitStunned)
                 return;
 

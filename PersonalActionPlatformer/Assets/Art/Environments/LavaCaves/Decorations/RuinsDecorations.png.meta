@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RuinsDecorations_0
+      name: Lava-Ruins-Spire
       rect:
         serializedVersion: 2
         x: 10
@@ -127,7 +127,7 @@ TextureImporter:
         width: 40
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,7 +141,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RuinsDecorations_1
+      name: Lava-Ruins-Arch
       rect:
         serializedVersion: 2
         x: 70
@@ -149,7 +149,7 @@ TextureImporter:
         width: 51
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RuinsDecorations_2
+      name: Lava_Ruins_Brick
       rect:
         serializedVersion: 2
         x: 146
@@ -171,7 +171,7 @@ TextureImporter:
         width: 30
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,11 +184,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Lava-Ruins-Arch-Left
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ddea6048e44db4586b9195a36126b5
+      internalID: -962978375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lava-Ruins-Arch-Right
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f195f6ca06cddbb4ca37d4ed78deccd7
+      internalID: -1853061960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b15301996f873f8468c16efafb5ec5da
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +242,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RuinsDecorations_0: 2306730420398929743
-      RuinsDecorations_1: 932101261245945451
-      RuinsDecorations_2: -2788821123286270649
+      Lava-Ruins-Arch: 932101261245945451
+      Lava-Ruins-Arch-Left: -962978375
+      Lava-Ruins-Arch-Right: -1853061960
+      Lava-Ruins-Spire: 2306730420398929743
+      Lava_Ruins_Brick: -2788821123286270649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

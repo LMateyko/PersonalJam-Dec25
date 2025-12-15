@@ -21,12 +21,9 @@ public class EnemyBaseBehaviorController : MonoBehaviour
     public virtual void UpdateBehavior() 
     {
         m_enemyOwner.SetTargetVelocityX(0);
-    }
 
-    // Returns true if the behavior is updating the current animation
-    public virtual void UpdateAnimationState()
-    {
-        m_enemyOwner.PlayCharacterAnimation("Idle");
+        if(!m_enemyOwner.IsDead && !m_enemyOwner.IsHitStunned)
+            m_enemyOwner.PlayCharacterAnimation("Idle");
     }
 
     public virtual void OnTakeDamage() { }

@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyController : BaseCharacterController
 {
@@ -9,6 +11,7 @@ public class EnemyController : BaseCharacterController
     [SerializeField] protected Collider2D m_hurtBox = default;
     [SerializeField] protected EnemyBaseBehaviorController m_behaviorController = default;
 
+    [SerializeField] protected UnityEvent m_onEnemyDeath = default;
 
     protected override void Update()
     {
@@ -39,6 +42,8 @@ public class EnemyController : BaseCharacterController
     protected override void OnDeath()
     {
         base.OnDeath();
+
+        m_onEnemyDeath?.Invoke();
 
         if(!m_persistCorpse)
             Destroy(gameObject);

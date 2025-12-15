@@ -13,6 +13,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
+      propertyPath: m_baseHealth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581414457147482522, guid: 9780b34dd66e40a44b39f64427695425, type: 3}
       propertyPath: m_animationPrefix
       value: Rat
       objectReference: {fileID: 0}
@@ -110,3 +114,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyOwner: {fileID: 6813955005855246136}
+  m_movementSpeed: 3
