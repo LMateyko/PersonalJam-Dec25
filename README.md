@@ -2,10 +2,12 @@
 Personal Project with development limited to December 2025
 
 
-Credits:
+## Credits:
 
-Art done by: https://aamatniekss.itch.io/
+**Code and Design:** Lucas Mateyko
 
-https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character
+**Art:** [aamatniekss](https://aamatniekss.itch.io/)
 
-https://aamatniekss.itch.io/lava-caves-tileset
+**SFX:** [David Stearns](https://outspacer.itch.io/platformer-sfx)
+
+**Music:** [Shawn Daley](https://shawndaley.bandcamp.com/)
